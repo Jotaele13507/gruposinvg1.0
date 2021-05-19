@@ -1,0 +1,11 @@
+CREATE TABLE gruposinv (
+    id_grupo INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    id_usuario INT NOT NULL,
+    unidad_acad VARCHAR(50) NOT NULL,
+    nombre_grupo VARCHAR(50) NOT NULL,
+    acronimo VARCHAR(50) NOT NULL,
+    fecha_creacion VARCHAR(50) NOT NULL,
+    obj_grupo VARCHAR(1500) NOT NULL,
+    
+    FOREIGN KEY fk_id_usuario(id_usuario) REFERENCES usuarios(id)
+);

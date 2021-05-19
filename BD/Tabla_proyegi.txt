@@ -1,0 +1,8 @@
+CREATE TABLE proyegi (
+    id_titulo int not null PRIMARY KEY AUTO_INCREMENT,
+    id_usuariot INT NOT NULL,
+    tit_inv VARCHAR(100) NOT NULL,
+    obj_inv VARCHAR(700) NOT NULL,
+
+    FOREIGN KEY fk_id_usuariot(id_usuariot) REFERENCES usuarios(id)
+);
